@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Store.create(name: "My Music Shop", location: "Tampa, FL", owner: "James Brown", inventory: ["trumpet", "trumpet", "tuba"])
