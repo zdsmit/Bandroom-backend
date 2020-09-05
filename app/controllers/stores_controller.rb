@@ -1,8 +1,13 @@
 class StoresController < ApplicationController
 
- def index
-    stores = Store.all
-    render json: StoreSerializer.new(stores)
- end
+  def index
+     stores = Store.all
+     render json: StoreSerializer.new(stores)
+  end
+
+  def create
+    store = Store.create(name: params[:name], owner: params[:owner], location: params[:location])
+    render json: StoreSerializer.new(store)
+  end
 
 end
