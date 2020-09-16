@@ -10,4 +10,8 @@ class StoresController < ApplicationController
     render json: StoreSerializer.new(store)
   end
 
+  def delete
+    Store.find_by(id: params[:id]).destroy
+  end
+
 end
