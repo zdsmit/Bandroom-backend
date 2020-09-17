@@ -4,7 +4,6 @@ class CreateStores < ActiveRecord::Migration[6.0]
       t.text :name
       t.text :location
       t.text :owner
-      t.text :inventory
 
       t.timestamps
     end

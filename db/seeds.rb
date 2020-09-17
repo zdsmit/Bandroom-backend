@@ -7,4 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Store.destroy_all
 
-Store.create(id: 0, name: "My Music Shop", location: "Tampa, FL", owner: "James Brown", inventory: ["trumpet", "trumpet", "tuba"])
+Store.create(id: 0, name: "My Music Shop", location: "Tampa, FL", owner: "James Brown")
+
+Instrument.create(id: 0, instrument_type: "trumpet", store_id: 0)
