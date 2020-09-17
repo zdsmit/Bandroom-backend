@@ -37,9 +37,9 @@ ActiveRecord::Schema.define(version: 2020_09_04_170454) do
   end
 
   create_table "stores", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.string "owner"
+    t.text "name"
+    t.text "location"
+    t.text "owner"
     t.text "inventory"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
