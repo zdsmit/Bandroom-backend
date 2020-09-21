@@ -6,7 +6,7 @@ class InstrumentsController < ApplicationController
   end
    
   def create
-    instrument = Instrument.create(instrument_type: params[:type], store_id: params[:StoreId])
+    instrument = Instrument.create(instrument_type: params[:instrument_type], store_id: params[:store_id])
     render json: InstrumentSerializer.new(instrument)
   end
    
