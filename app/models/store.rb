@@ -1,3 +1,3 @@
 class Store < ApplicationRecord
-  serialize :inventory, Array
+  has_many :instruments
 end
